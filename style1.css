@@ -275,13 +275,6 @@ main .center .title-box .sub-title {
     font-size: 18px;
 }
 
-
-/* main .center body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
 main .center .body p {
     width: 100%;
     color: var(--color2);
@@ -289,15 +282,20 @@ main .center .body p {
     line-height: 30px;
     margin-top: 30px;
     font-family: 'Roboto', sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     letter-spacing: 1px;
+}
+
+main .center .body .tech li {
+    color: var(--color1);
+    margin-bottom: 10px;
 }
 
 main .center .portrait {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -50px;
+    height: 100%;
 }
 
 main .center .portrait img {
@@ -842,6 +840,9 @@ Contact
     }
     main .center p.home {
         width: 100%;
+    }
+    main .center p {
+        font-size: 16px;
     }
     main .center .portrait img {
         width: 350px;
