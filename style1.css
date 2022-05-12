@@ -90,7 +90,7 @@ nav ul li a:hover::before {
 
 nav .menu-btn i {
     color: #fff;
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
     top: 45px;
     right: 40px;
@@ -289,6 +289,14 @@ main .center .body p {
 main .center .body .tech li {
     color: var(--color1);
     margin-bottom: 10px;
+}
+
+main .center .body .tech ul {
+    padding-left: 0;
+}
+
+main .center .body .tech ul:nth-child(2) {
+    padding-left: 20px;
 }
 
 main .center .portrait {
@@ -884,5 +892,12 @@ Contact
     }
     main .center .skill .skill-box {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 530px) {
+    .img_side .project_img {
+        height: 180px;
+        width: 85%;
     }
 }
