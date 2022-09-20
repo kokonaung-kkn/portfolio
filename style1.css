@@ -234,6 +234,23 @@ main .center button.home {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
+    position: relative;
+}
+
+main .center button.home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    background-color: var(--color3);
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+main .center button.home:hover::before{
+    width: 100%;
 }
 
 main .center button.home i {
@@ -242,7 +259,8 @@ main .center button.home i {
 }
 
 main .center button.home:hover {
-    background-color: var(--color4);
+    color: var(--main-color);
+    font-weight: bold;
 }
 
 
@@ -411,11 +429,11 @@ main .center .skill .skill-box .dropdown-box:first-child {
 
 .dropdown-box .down .language:nth-child(2) .score::before {
     background-color: var(--color1);
-    width: 80%;
+    width: 85%;
 }
 
 .dropdown-box .down .language:nth-child(3) .score::before {
-    width: 68%;
+    width: 80%;
 }
 
 .dropdown-box .down .language:nth-child(4) .score::before {
@@ -431,11 +449,14 @@ main .center .skill .skill-box .dropdown-box:first-child {
 }
 
 .dropdown-box .down.backend .language:nth-child(2) .score::before {
-    width: 15%;
+    width: 25%;
 }
 
 .dropdown-box .down.backend .language:nth-child(3) .score::before {
     width: 85%;
+}
+.dropdown-box .down.backend .language:nth-child(4) .score::before {
+    width: 50%;
 }
 
 
@@ -570,7 +591,7 @@ main .center section:last-child {
 }
 
 .content_side .content_title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 15px;
     width: 83%;
 }
@@ -624,11 +645,31 @@ main .center section:last-child {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
+    position: relative
+}
+
+.demo_btn button::before,
+.input-box .contact_button button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    background-color: var(--color3);
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.demo_btn button:hover::before,
+.input-box .contact_button button:hover::before{
+    width: 100%;
 }
 
 .demo_btn button:hover,
 .input-box .contact_button:hover button {
-    background-color: var(--color4);
+    color: var(--main-color);
+    font-weight: bold;
 }
 
 .demo_btn button i,

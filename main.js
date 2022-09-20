@@ -17,12 +17,14 @@ $(document).ready(function() {
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
+        slidesPerView: 1,
         loop: true,
         speed: 800,
 
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
+            clickable: true,
         },
 
         // Navigation arrows
@@ -41,6 +43,12 @@ $(document).ready(function() {
             $('.top').addClass('show-scroll')
         } else {
             $('.top').removeClass('show-scroll')
+        }
+    })
+
+    $('nav ul li').click(function(){
+        if($('#click').is(':checked')){
+            $('#click').prop("checked",false)
         }
     })
 
