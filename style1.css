@@ -452,7 +452,7 @@ main .center .skill .skill-box .dropdown-box:first-child {
 }
 
 .dropdown-box .down.backend .language:nth-child(2) .score::before {
-    width: 40%;
+    width: 50%;
 }
 
 .dropdown-box .down.backend .language:nth-child(3) .score::before {
@@ -931,10 +931,6 @@ Contact
     .input-box .upper .name {
         margin-bottom: 30px;
     }
-}
-
-@media (max-width: 767px) {
-    
 }
 
 @media (max-width: 650px) {
